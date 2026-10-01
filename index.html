@@ -1,0 +1,406 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Schulke | Business Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f6f8;
+        }
+
+        header {
+            background: #172033;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #7db7ff;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+            background: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            color: #172033;
+        }
+
+        .hero h3 {
+            font-size: 23px;
+            font-weight: normal;
+            color: #4169a1;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #172033;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #4169a1;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #172033;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            background: #f5f6f8;
+        }
+
+        .about-text {
+            max-width: 850px;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .skill h3 {
+            color: #172033;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            color: #666;
+        }
+
+        .projects {
+            background: white;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #f5f6f8;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #4169a1;
+        }
+
+        .project h3 {
+            color: #172033;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project ul {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+            background: #172033;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #101624;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Michael Schulke</h2>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Michael Schulke</h1>
+
+            <h3>Business Student | Future Business Professional</h3>
+
+            <p>
+                I am a motivated business student interested in finance, marketing,
+                and working with organizations to solve real business problems.
+                I enjoy learning through hands-on experiences and developing
+                practical skills that can be applied in the workplace.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+        </div>
+    </section>
+
+
+    <!-- About / Personal Statement -->
+    <section class="about" id="about">
+        <h2>Personal Statement</h2>
+
+        <div class="about-text">
+            <p>
+                I am a college student who is focused on building a strong foundation
+                in business and gaining real-world experience. I value responsibility,
+                perseverance, achievement, and organization. These values have helped
+                me stay organized, complete my responsibilities, and continue working
+                toward my academic and career goals.
+            </p>
+
+            <br>
+
+            <p>
+                Through my coursework and internship experience, I have developed
+                experience working with clients, communicating with professionals,
+                organizing information, and understanding business problems. My goal
+                is to continue developing these skills and use them to help businesses
+                improve and grow.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Communication</h3>
+                <p>
+                    Comfortable communicating with clients, coworkers, and
+                    professionals through phone, email, and in-person meetings.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Client Management</h3>
+                <p>
+                    Experience organizing client information, scheduling meetings,
+                    and helping prepare for client interactions.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Organization</h3>
+                <p>
+                    Able to organize information, manage responsibilities, and
+                    keep track of multiple tasks.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Problem Solving</h3>
+                <p>
+                    Able to identify business problems and think through possible
+                    solutions using information and research.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Marketing</h3>
+                <p>
+                    Knowledge of marketing concepts and experience analyzing
+                    business challenges and potential marketing solutions.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Microsoft Excel</h3>
+                <p>
+                    Experience using Excel to organize information and complete
+                    basic business-related tasks.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>Projects & Experience</h2>
+
+        <div class="project-container">
+
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Internship – Client Meeting Setup & Management</h3>
+
+                <p>
+                    During my internship, I gained hands-on experience helping
+                    advisors prepare for and manage client meetings.
+                </p>
+
+                <ul>
+                    <li>Helped schedule client meetings</li>
+                    <li>Organized client information</li>
+                    <li>Prepared for client meetings with advisors</li>
+                    <li>Communicated with clients over the phone</li>
+                    <li>Shadowed advisors during in-person meetings</li>
+                    <li>Learned about investment and financial products</li>
+                </ul>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Business Marketing Problem-Solving Project</h3>
+
+                <p>
+                    This project focused on reaching out to a company, understanding
+                    its business and marketing challenges, and developing ideas to
+                    help address those problems.
+                </p>
+
+                <ul>
+                    <li>Researched the company's business</li>
+                    <li>Identified potential marketing issues</li>
+                    <li>Reached out to a company professionally</li>
+                    <li>Analyzed the company's target market</li>
+                    <li>Developed possible marketing solutions</li>
+                    <li>Presented recommendations based on research</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Let's Connect</h2>
+
+        <p>
+            I am always interested in connecting with other business professionals
+            and learning about new opportunities.
+        </p>
+
+        <a href="mailto:your.email@example.com" class="button">
+            Contact Me
+        </a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Michael Schulke | Business Portfolio</p>
+    </footer>
+
+</body>
+</html>
+```
